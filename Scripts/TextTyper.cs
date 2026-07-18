@@ -8,8 +8,8 @@ namespace RAXY.UI
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class TextTyper : MonoBehaviour
     {
-        [SerializeField, Range(0.001f, 0.1f)]
-        private float charInterval = 0.03f;
+        [Range(0.001f, 0.1f)]
+        public float charInterval = 0.03f;
 
         private TextMeshProUGUI tmp;
         private Coroutine typingRoutine;
